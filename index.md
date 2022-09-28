@@ -8,8 +8,6 @@
 
 [google](http://google.com)
 
-![Image](http://ibb.co/jg1wWPC)
-
 >blockquote test
 
 * List1
@@ -32,3 +30,6 @@ line3
 ```
 
 [Lab Report](https://github.com/fergusyyang/cse15l-lab-reports)
+
+![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/screenshot.png)
+
