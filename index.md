@@ -6,7 +6,7 @@
 
 ## hello world
 
-[google](google.com)
+[google](http://google.com)
 
 ![Image](http://url/a.png)
 
