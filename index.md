@@ -31,4 +31,4 @@ line2
 line3
 ```
 
-[Lab Report]https://github.com/fergusyyang/cse15l-lab-reports
+[Lab Report](https://github.com/fergusyyang/cse15l-lab-reports)
