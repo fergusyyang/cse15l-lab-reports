@@ -40,12 +40,19 @@ Try creating a file on your end called WhereAmI.java
 and input the following:
 
 class WhereAmI {
+
   public static void main(String[] args) {
+  
     System.out.println(System.getProperty("os.name"));
+    
     System.out.println(System.getProperty("user.name"));
+    
     System.out.println(System.getProperty("user.home"));
+    
     System.out.println(System.getProperty("user.dir"));
+    
   }
+  
 }
 
 then compile the file using command:
