@@ -31,6 +31,8 @@ For example:
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/try%20commands.png)
 
+(Screenshot example from Karon)
+
 You can also move files over SSH with scp.
 
 scp is the command we will use. We will run scp on your end.
@@ -61,3 +63,5 @@ then in the terminal use this scp command with your account:
 scp WhereAmI.java cs15lfa22zz@ieng6.ucsd.edu:~/
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/scp.png)
+
+(Screenshot example from Karon)
