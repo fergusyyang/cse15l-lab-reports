@@ -31,7 +31,7 @@ For example:
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/try%20commands.png)
 
-(Screenshot example from Karon)
+(Screenshot example from Karon Luo)
 
 You can also move files over SSH with scp.
 
@@ -64,4 +64,4 @@ scp WhereAmI.java cs15lfa22zz@ieng6.ucsd.edu:~/
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/scp.png)
 
-(Screenshot example from Karon)
+(Screenshot example from Karon Luo)
