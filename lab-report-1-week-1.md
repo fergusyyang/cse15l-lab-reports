@@ -31,5 +31,33 @@ For example:
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/try%20commands.png)
 
+You can also move files over SSH with scp.
+
+scp is the command we will use. We will run scp on your end.
+
+Try creating a file on your end called WhereAmI.java
+
+and input the following:
+
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+
+then compile the file using command:
+
+javac WhereAmI.java
+
+and run the file using command:
+
+java WhereAmI
+
+then in the terminal use this scp command with your account:
+
+scp WhereAmI.java cs15lfa22zz@ieng6.ucsd.edu:~/
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/scp.png)
