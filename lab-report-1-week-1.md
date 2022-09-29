@@ -21,6 +21,14 @@ Enter the password to connect with ieng6
 
 Now, try a few commands in the terminal.
 
+For example:
+* cd ~
+* cd
+* ls
+* ls -lat
+* ls -a
+
+
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/try%20commands.png)
 
 
