@@ -65,3 +65,7 @@ scp WhereAmI.java cs15lfa22zz@ieng6.ucsd.edu:~/
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/scp.png)
 
 (Screenshot example from Karon Luo)
+
+![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/SSH%20Keys.png)
+
+![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/Optimizing%20Remote%20Running.png)
