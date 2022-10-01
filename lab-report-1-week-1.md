@@ -19,15 +19,15 @@ Enter the password to connect with ieng6
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/VScode%20terminal.png)
 
-Now, try a few commands in the terminal.
+Now, try a few commands in the terminal. 
 
 For example:
+
 * cd ~
 * cd
 * ls
 * ls -lat
 * ls -a
-
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/try%20commands.png)
 
@@ -35,32 +35,11 @@ For example:
 
 You can also move files over SSH with scp.
 
-scp is the command we will use. We will run scp on your end.
+scp is the command we will use and on your end.
 
-Try creating a file on your end called WhereAmI.java
+We created a file named WhereAmI.java, 
 
-and input the following:
-
-class WhereAmI {
-  public static void main(String[] args) { 
-    System.out.println(System.getProperty("os.name"));
-    System.out.println(System.getProperty("user.name"));
-    System.out.println(System.getProperty("user.home"));
-    System.out.println(System.getProperty("user.dir"));
-  }
-}
-
-then compile the file using command:
-
-javac WhereAmI.java
-
-and run the file using command:
-
-java WhereAmI
-
-then in the terminal use this scp command with your account:
-
-scp WhereAmI.java cs15lfa22zz@ieng6.ucsd.edu:~/
+compiled and ran then used scp to move the file over SSH
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/scp.png)
 
