@@ -47,9 +47,7 @@ To ssh or scp without a password, create public key and private key files.
 
 Then ssh command can use the files instead of having to enter the password.
 
-![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/SSH%20Keys.png)
-
-(Screenshot example from Kailan Luo)
+![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/ssh%20keys.png)
 
 To have better remote running process, here are some tips:
 
@@ -57,6 +55,4 @@ To have better remote running process, here are some tips:
 * use semicolon to run multiple commands
 * write a command in quote after ssh and id to directly run on ieng6
 
-![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/Optimizing%20Remote%20Running.png)
-
-(Screenshot example from Kailan Luo)
+![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/better.png)
