@@ -31,9 +31,7 @@ For example:
 * ls -lat
 * ls -a
 
-![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/try%20commands.png)
-
-(Screenshot example from Karon Luo)
+![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/trying%20commands.png)
 
 You can also move files over SSH with scp.
 
@@ -44,8 +42,6 @@ We created a file named WhereAmI.java,
 compiled and ran then used scp to move the file over SSH
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/scp.png)
-
-(Screenshot example from Karon Luo)
 
 To ssh or scp without a password, create public key and private key files.
 
