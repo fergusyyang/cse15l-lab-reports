@@ -53,7 +53,11 @@ Then ssh command can use the files instead of having to enter the password.
 
 (Screenshot example from Kailan Luo)
 
+To have better remote running process, here are some tips:
 
+* use up-arrow to apply the last command
+* use semicolon to run multiple commands
+* write a command in quote after ssh and id to directly run on ieng6
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/Optimizing%20Remote%20Running.png)
 
