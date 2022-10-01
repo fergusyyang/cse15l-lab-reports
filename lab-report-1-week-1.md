@@ -45,11 +45,15 @@ compiled and ran then used scp to move the file over SSH
 
 (Screenshot example from Karon Luo)
 
+To ssh or scp without a password, create public key and private key files.
 
+Then ssh command can use the files instead of having to enter the password.
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/SSH%20Keys.png)
 
 (Screenshot example from Kailan Luo)
+
+
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/Optimizing%20Remote%20Running.png)
 
