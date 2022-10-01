@@ -41,7 +41,7 @@ We created a file named WhereAmI.java,
 
 compiled and ran then used scp to move the file over SSH
 
-![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/scp.png)
+![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/scp2.png)
 
 To ssh or scp without a password, create public key and private key files.
 
