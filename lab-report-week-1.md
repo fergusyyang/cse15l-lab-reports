@@ -2,8 +2,6 @@
 
 In week 1 lab, we will learn about how to log into student account on ieng6, using VScode.
 
-As the end of Friday, I was still not able to log in to ieng6 because of password issues, so some screenshots come from groupmates.
-
 First we need to install [VScode](http://code.visualstudio.com/).
 Make sure to download the correct version for your computer (Windows/Mac).
 
