@@ -6,7 +6,7 @@ First we need to install [VScode](http://code.visualstudio.com/).
 
 Make sure to download the correct version for your computer (Windows/Mac).
 
-![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/VScode%20download%20page.png)
+![Image](./VScode%20download%20page.png)
 
 Now we want to connect to our SSH remote server. Before that, we need to use our course-specific account to log into the server.
 
@@ -22,7 +22,7 @@ When asking if you want to connect, enter ```yes```. Enter the password to log i
 
 (For privacy, what you entered for password will not show up on the screen.)
 
-![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/VScode%20terminal.png)
+![Image](./VScode%20terminal.png)
 
 Now, try a few commands in the terminal. 
 
@@ -34,7 +34,7 @@ For example:
 * ```ls -lat```
 * ```ls -a```
 
-![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/trying%20commands.png)
+![Image](./trying%20commands.png)
 
 You can also move files over SSH with ```scp```.
 
@@ -71,7 +71,7 @@ In the directory where you built ```WhereAmI.java```, enter the following comman
 
 After entering your password, you can log into your remote server and check if the file is in the home directory!
 
-![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/scp2.png)
+![Image](./scp2.png)
 
 To ssh or scp without a password, we will use the program ```ssh-keygen``` to create public key and private key files.
 
@@ -108,7 +108,7 @@ When it shows ```Enter file in which to save the key```, press ```enter```.
 
 Then, you should be able to use ```ssh``` command to move the files without having to enter the password.
 
-![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/ssh%20keys.png)
+![Image](./ssh%20keys.png)
 
 To have better remote running process, here are some tips:
 
@@ -116,4 +116,4 @@ To have better remote running process, here are some tips:
 * use semicolon to run multiple commands
 * write a command in quote after ssh and id to directly run on ieng6
 
-![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/better.png)
+![Image](./better.png)
