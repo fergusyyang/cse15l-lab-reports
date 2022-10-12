@@ -73,9 +73,40 @@ After entering your password, you can log into your remote server and check if t
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/scp2.png)
 
-To ssh or scp without a password, create public key and private key files.
+To ssh or scp without a password, we will use the program ```ssh-keygen``` to create public key and private key files.
 
-Then ```ssh``` command can use the files instead of having to enter the password.
+The public key will be copied to the server, and the private key will be stored on the client.
+
+Use the following for setup:
+
+```
+# on client (your computer)
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/joe/.ssh/id_rsa): /Users/joe/.ssh/id_rsa
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/joe/.ssh/id_rsa.
+Your public key has been saved in /Users/joe/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0 joe@Joes-Mac-mini.local
+The key's randomart image is:
++---[RSA 3072]----+
+|                 |
+|       . . + .   |
+|      . . B o .  |
+|     . . B * +.. |
+|      o S = *.B. |
+|       = = O.*.*+|
+|        + * *.BE+|
+|           +.+.o |
+|             ..  |
++----[SHA256]-----+
+```
+
+When it shows ```Enter file in which to save the key```, press ```enter```.
+
+Then, you should be able to use ```ssh``` command to move the files without having to enter the password.
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/ssh%20keys.png)
 
