@@ -7,9 +7,17 @@ Make sure to download the correct version for your computer (Windows/Mac).
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/VScode%20download%20page.png)
 
+Now we want to connect to our SSH remote server.
+
+Before that, we need to use our course-specific account to log into the server.
+
+Here you can look up your [CSE15L account](https://sdacs.ucsd.edu/~icc/index.php).
+
+Reset the password under your account username.
+
 Open VScode. In the tool bar, select Terminal - New Terminal to open a terminal in VScode.
 
-Enter ssh cs15lfa22zz@ieng6.ucsd.edu
+Enter ```ssh cs15lfa22zz@ieng6.ucsd.edu```
 
 (replace "zz" with your account letter, for example, mine is iv)
 
@@ -23,17 +31,17 @@ Now, try a few commands in the terminal.
 
 For example:
 
-* cd ~
-* cd
-* ls
-* ls -lat
-* ls -a
+* ```cd ~```
+* ```cd```
+* ```ls```
+* ```ls -lat```
+* ```ls -a```
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/trying%20commands.png)
 
-You can also move files over SSH with scp.
+You can also move files over SSH with ```scp```.
 
-scp is the command we will use and on your end.
+```scp``` is the command we will use and on your end.
 
 We created a file named WhereAmI.java, 
 
@@ -43,7 +51,7 @@ compiled and ran then used scp to move the file over SSH
 
 To ssh or scp without a password, create public key and private key files.
 
-Then ssh command can use the files instead of having to enter the password.
+Then ```ssh``` command can use the files instead of having to enter the password.
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/ssh%20keys.png)
 
