@@ -3,13 +3,12 @@
 In week 1 lab, we will learn about how to log into student account on ieng6, using VScode.
 
 First we need to install [VScode](http://code.visualstudio.com/).
+
 Make sure to download the correct version for your computer (Windows/Mac).
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/VScode%20download%20page.png)
 
-Now we want to connect to our SSH remote server.
-
-Before that, we need to use our course-specific account to log into the server.
+Now we want to connect to our SSH remote server. Before that, we need to use our course-specific account to log into the server.
 
 Here you can look up your [CSE15L account](https://sdacs.ucsd.edu/~icc/index.php).
 
@@ -17,13 +16,9 @@ Reset the password under your account username.
 
 Open VScode. In the tool bar, select Terminal - New Terminal to open a terminal in VScode.
 
-Enter ```ssh cs15lfa22zz@ieng6.ucsd.edu```
+Enter ```ssh cs15lfa22zz@ieng6.ucsd.edu``` (replace "zz" with your account letter, for example, mine is iv)
 
-(replace "zz" with your account letter, for example, mine is iv)
-
-When asking if you want to connect, enter "yes"
-
-Enter the password to connect with ieng6
+When asking if you want to connect, enter ```yes```. Enter the password to log into ieng6 server.
 
 (For privacy, what you entered for password will not show up on the screen.)
 
@@ -66,7 +61,7 @@ In your terminal, compile and run the file
 
 ```java WhereAmI```
 
-Then we will use ```scp``` to move the file over SSH
+Then we will use ```scp``` to move the file over SSH.
 
 In the directory where you built ```WhereAmI.java```, enter the following command in your terminal
 
@@ -74,7 +69,7 @@ In the directory where you built ```WhereAmI.java```, enter the following comman
 
 (remember to replace ```zz``` with your username)
 
-After entering your password, you can log into your remote server and check if the file is in the home directory.
+After entering your password, you can log into your remote server and check if the file is in the home directory!
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/scp2.png)
 
