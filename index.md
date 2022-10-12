@@ -7,8 +7,6 @@ First we need to install [VScode](http://code.visualstudio.com/).
 Make sure to download the correct version for your computer (Windows/Mac).
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/VScode%20download%20page.png)
-![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/VScode%20download%20page.png)
-![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/VScode%20download%20page.png)
 
 Now we want to connect to our SSH remote server. Before that, we need to use our course-specific account to log into the server.
 
