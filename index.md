@@ -117,8 +117,3 @@ To have better remote running process, here are some tips:
 * write a command in quote after ssh and id to directly run on ieng6
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/better.png)
-
-[Lab Reports](https://github.com/fergusyyang/cse15l-lab-reports)
-
-[Week 0 Lab Report](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/week-0-lab.md)
-
