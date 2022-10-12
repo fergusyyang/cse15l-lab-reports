@@ -25,6 +25,8 @@ When asking if you want to connect, enter "yes"
 
 Enter the password to connect with ieng6
 
+(For privacy, what you entered for password will not show up on the screen.)
+
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/VScode%20terminal.png)
 
 Now, try a few commands in the terminal. 
@@ -43,9 +45,36 @@ You can also move files over SSH with ```scp```.
 
 ```scp``` is the command we will use and on your end.
 
-We created a file named WhereAmI.java, 
+Now we want to create a file on your computer named ```WhereAmI.java```, and move it to the remote server.
 
-compiled and ran then used scp to move the file over SSH
+Create a java file and type in:
+
+```
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+```
+
+In your terminal, compile and run the file
+
+```javac WhereAmI.java```
+
+```java WhereAmI```
+
+Then we will use ```scp``` to move the file over SSH
+
+In the directory where you built ```WhereAmI.java```, enter the following command in your terminal
+
+```scp WhereAmI.java cs15lfa22zz@ieng6.ucsd.edu:~/```
+
+(remember to replace ```zz``` with your username)
+
+After entering your password, you can log into your remote server and check if the file is in the home directory.
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/scp2.png)
 
