@@ -1,5 +1,7 @@
 # Lab Report Week 3
 
+## Part 1
+
 ```
 public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
@@ -44,23 +46,49 @@ public String handleRequest(URI url) {
 
 This is the code of the search engine.
 
-![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/add%20banana.png)
-This is the add method that we are adding banana to the list.
 
-![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/search%20a.png)
-This is the search method that we are searching "a" from the list.
+![Image](./add%20banana.png)
 
-![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/search%20apple.png)
-This is the search method that we are searching "apple" from the list.
+Above is the add method. We are adding "banana" to the list.
+I also showed that now we have "apple", "pineapple", "banana" in the list.
 
-![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/the%20bug1.png)
+
+![Image](./search%20a.png)
+
+Above is the search method that we are searching "a" from the list above.
+We found "apple", "pineapple", "banana" from the list.
+
+
+![Image](./search%20apple.png)
+
+Above is the search method that we are searching "apple" from the list.
+This time we only found "apple", "pineapple" from the list.
+
+
+## Part 2
+
+### Bug 1 - filter
+
+![Image](./code%20of%20the%20test1.jpeg)
+
+Above is the failure-inducing input. The input is {"apple", "banana", "cheery", "dragon fruit", "eggplant"}.
+
+![Image](./bugcode1.png)
+
+In this bug code above, the expected is banana, but the actual is eggplant.
+
+![Image](./symptoms1.png)
+
+Above is the symptom(output of the test).
+
+The bug is causing this output because 
+
+### Bug 2 - reversed
+
+![Image](./the%20bug1.png)
 In this bug code, the goal is to return the new array, but the code actually returned the old array. 
 
-![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/symptoms1.png)
-This is the symptom(output of the test)
-
-![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/code%20of%20the%20test1.jpeg)
-This is the code of the test.
+![Image](./Bug2.png)
 
 [Lab Reports](https://github.com/fergusyyang/cse15l-lab-reports)
 
