@@ -1,6 +1,6 @@
 # Lab Report Week 3
 
-```
+``
 
 public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
@@ -42,7 +42,7 @@ public String handleRequest(URI url) {
     }
 }
 
-```
+``
 
 This is the code of the search engine.
 
