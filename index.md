@@ -1,7 +1,6 @@
 # Lab Report Week 3
 
-``
-
+```
 public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
             return String.format("Number: %d", num);
@@ -41,8 +40,7 @@ public String handleRequest(URI url) {
 
     }
 }
-
-``
+```
 
 This is the code of the search engine.
 
