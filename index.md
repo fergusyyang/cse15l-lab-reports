@@ -1,6 +1,49 @@
 # Lab Report Week 3
 
-![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/searchengine.png)
+```
+
+public String handleRequest(URI url) {
+        if (url.getPath().equals("/")) {
+            return String.format("Number: %d", num);
+        } else if (url.getPath().equals("/increment")) {
+            num += 1;
+            return String.format("Number incremented!");
+        } else {
+            System.out.println("Path: " + url.getPath());
+            if (url.getPath().contains("/add")) {
+                String[] parameters = url.getQuery().split("=");
+                if (parameters[0].equals("count")) {
+                    num += Integer.parseInt(parameters[1]);
+                    return String.format("Number increased by %s! It's now %d", parameters[1], num);
+                }
+            }
+            if (url.getPath().contains("/add")) {
+                String[] parameters = url.getQuery().split("=");
+                if (parameters[0].equals("s")) {
+                    arr.add(parameters[1]);
+                    return String.format((parameters[1])+ " is added to the list! Current list: " + arr);
+                }
+            }
+            if (url.getPath().contains("/search")) {
+                String[] parameters = url.getQuery().split("=");
+                if (parameters[0].equals("s")) {
+                    String result = "";
+                    for (String element : arr){
+                        if (element.contains(parameters[1])){
+                            result = result + " " + element;
+                        }
+                    }
+                    return result;
+                }
+            }
+            return "404 Not Found!";
+        }
+
+    }
+}
+
+```
+
 This is the code of the search engine.
 
 ![Image](https://github.com/fergusyyang/cse15l-lab-reports/blob/main/add%20banana.png)
