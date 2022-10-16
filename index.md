@@ -4,7 +4,7 @@ In this CSE 15L Week 3 lab report, I will summarize our learning progress in wee
 
 In Part 1, I will introduce a simple search engine that we built in class, which is inspired by the number server.
 
-Functions include adding a string to the list, showing the full array list, and search for a certain string from the list.
+Functions include adding a string to the list, showing the full array list, and searching for a certain string from the list.
 
 In Part 2, I will go over our debugging process in week 3 lab, and explain the failure-inducing inputs, the symptoms, and the bugs.
 
@@ -58,7 +58,7 @@ Above is the code of the search engine.
 ![Image](./add%20banana.png)
 
 Above is the ```add``` method. We are adding ```banana``` to the list.
-I also showed that now we have ```apple```, ```pineapple```, ```banana``` in the list.
+The webpage also shows that currently we have ```apple```, ```pineapple```, ```banana``` in the list.
 
 When we find ```/add``` in the path, we check the value of ```parameters[0]```, which is the string before ```=``` in the path.
 If ```parameters[0]``` is ```s```, then we will add ```parameters[1]``` to the arraylist. In this case, ```parameters[1]``` is the input ```banana``` after the ```=``` in the path.
@@ -101,6 +101,8 @@ The bug is causing this output because it is adding the eggplant on the position
 
 ### Bug 2 - reversed
 
+In the following bug code, our goal is to return a new array with all elements in the input array being reversed.
+
 ```
 static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
@@ -110,8 +112,6 @@ static int[] reversed(int[] arr) {
   return arr;
 }
 ```
-
-In the bug code above, our goal is to return a new array with all elements in the input array being reversed.
 
 The failure inducing input is
 
@@ -125,7 +125,7 @@ The failure inducing input is
 The failing test output is ```{0, 0, ...}```
 
 In this bug code, the goal is to return the new array, but the code actually returned the old array ```arr```.
-The bug code is causing thsi symptom because the original code assigns the new array to the old array and it changes the values in the old array. In the line ```arr[i] = newArray[arr.length - i - 1];```, ```arr[i]``` is actually assigning i to 0, so it creates a new array that is ```{0, 0, 0...}```, which is different from our expected output.
+The bug code is causing this symptom because the original code assigns the new array to the old array and it changes the values in the old array. In the line ```arr[i] = newArray[arr.length - i - 1];```, ```arr[i]``` is actually assigning i to 0, so it creates a new array that is ```{0, 0, 0...}```, which is different from our expected output.
 
 
 [Lab Reports](https://github.com/fergusyyang/cse15l-lab-reports)
