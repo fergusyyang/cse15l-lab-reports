@@ -97,14 +97,36 @@ In this bug code above, the expected is ```banana```, but the actual is ```eggpl
 
 Above is the symptom(output of the test).
 
-The bug is causing this output because 
+The bug is causing this output because it is adding the eggplant on the position of index 0, which is opposite from our expected output. The original code adds the string to the beginning of the list, so the output does not follow the same order as the input list. The eggplant should be on the last one in the list instead.
 
 ### Bug 2 - reversed
 
-![Image](./the%20bug1.png)
-In this bug code, the goal is to return the new array, but the code actually returned the old array. 
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+  return arr;
+}
+```
 
-![Image](./Bug2.png)
+In the bug code above, our goal is to return a new array with all elements in the input array being reversed.
+
+The failure inducing input is
+
+```
+{1, 3, 7, 4, 9};
+{1, 2, 3, 4};
+{4, 3, 2, 1};
+{1, 2};
+```
+
+The failing test output is ```{0, 0, ...}```
+
+In this bug code, the goal is to return the new array, but the code actually returned the old array ```arr```.
+The bug code is causing thsi symptom because the original code assigns the new array to the old array and it changes the values in the old array. In the line ```arr[i] = newArray[arr.length - i - 1];```, ```arr[i]``` is actually assigning i to 0, so it creates a new array that is ```{0, 0, 0...}```, which is different from our expected output.
+
 
 [Lab Reports](https://github.com/fergusyyang/cse15l-lab-reports)
 
