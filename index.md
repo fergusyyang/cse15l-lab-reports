@@ -58,7 +58,7 @@ Above is the code of the search engine.
 ![Image](./add%20banana.png)
 
 Above is the ```add``` method. We are adding ```banana``` to the list.
-The webpage also shows that currently we have ```apple```, ```pineapple```, ```banana``` in the list.
+The current list is also returned on the webpage.
 
 When we find ```/add``` in the path, we check the value of ```parameters[0]```, which is the string before ```=``` in the path.
 If ```parameters[0]``` is ```s```, then we will add ```parameters[1]``` to the arraylist. In this case, ```parameters[1]``` is the input ```banana``` after the ```=``` in the path.
