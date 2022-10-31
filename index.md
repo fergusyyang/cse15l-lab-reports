@@ -32,7 +32,7 @@ Similar to example 4, we can write ```find technical -name "chapter-12.txt"``` t
 ![Image](./5-name%20chapter12.png)
 
 ## Example 6
-Similar to example 4, we can write ```find technical -name "*2.txt"``` to list the files that ends with "2.txt" in the ```technical``` directory.
+Similar to example 4, we can write ```find technical -name "*2.txt"``` to list the files that ends with ```2.txt``` in the ```technical``` directory.
 ![Image](./6%202txt%20input.png)
 ![Image](./6%202txt%20output.png)
 
