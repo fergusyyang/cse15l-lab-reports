@@ -1,6 +1,9 @@
 # Lab Report Week 5
 
 In this week 5 lab report, I will give 9 command-line examples and explain how I used them.
+In example 1 to 3, I will introduce how to use ```find``` in the simplest way: to use it directly and list all the files in the directory.
+In example 4 to 6, I will explain how to use ```find some-files -name``` to look for a file in the directory given a specific name.
+In example 7 to 9, I will explain how to use ```find``` with ```xargs wc``` to find and count the lines/words/characters of the files in the given directory.
 
 
 ## Example 1
