@@ -1,6 +1,6 @@
 # Lab Report Week 5
 
-In this week 5 lab report, I will give 9 command-line examples and explain how to use them.
+In this week 5 lab report, I will give 9 command-line examples and explain how I used them.
 
 
 ## Example 1
