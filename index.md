@@ -6,6 +6,7 @@ In this week 5 lab report, I will give 9 command-line examples and explain how I
 ## Example 1
 In the first example, we used the command ```find``` in the simplest way. We wrote ```find technical/``` on the command line. The ```find``` command can list all the files in the directory. In this case, we are listing the files in the technical directory.
 ![Image](./1%20find%20technical.png)
+![Image](./1%20find%20technical.png)
 
 
 ## Example 2
