@@ -18,7 +18,7 @@ We want to use ```find``` in two different directories together, so we wrote ```
 ![Image](./2tech%20and%20lib%20output.png)
 
 ## Example 3
-We can use ```find``` with a path. For example, ```find technical/911report```. Then the command would list all the files in hte 911report directory.
+We can use ```find``` with a path. For example, ```find technical/911report```. Then the command would list all the files in the ```911report``` directory.
 ![Image](./3%20find%20technical%20911.png)
 
 
@@ -28,16 +28,16 @@ Using ```find``` with ```-name```, we can find certain files that meets our crit
 ![Image](./4-name%20output.png)
 
 ## Example 5
-Similar to example 4, we can write ```find technical -name "chapter-12.txt"``` to find and list the file ```chapter-12.txt``` if it is in the ```tehnical``` directory.
+Similar to example 4, we can write ```find technical -name "chapter-12.txt"``` to find and list the file ```chapter-12.txt``` if it is in the ```technical``` directory.
 ![Image](./5-name%20chapter12.png)
 
 ## Example 6
-Similar to example4, we can write ```find technical -name "*2.txt"``` to list the files that ends with "2.txt" in the ```technical``` directory.
+Similar to example 4, we can write ```find technical -name "*2.txt"``` to list the files that ends with "2.txt" in the ```technical``` directory.
 ![Image](./6%202txt%20input.png)
 ![Image](./6%202txt%20output.png)
 
 ## Example 7
-We use ```xargs wc``` to count the lines/words/characters of the files. For example, if we type in ```find technical|xargs wc```, then the command will cound the lines/words/characters of all the files in the ```technical``` directory.
+We use ```xargs wc``` to count the lines/words/characters of the files. For example, if we type in ```find technical|xargs wc```, then the command will count the lines/words/characters of all the files in the ```technical``` directory.
 ![Image](./7wc%20input.png)
 ![Image](./7wc%20output.png)
 
