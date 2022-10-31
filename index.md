@@ -12,6 +12,7 @@ In the first example, we used the command ```find``` in the simplest way. We wro
 ## Example 2
 We want to use ```find``` in two different directories together, so we wrote ```find technical/ lib/``` to list all the files in both of these directoreis.
 ![Image](./2%20tech%20and%20lib.png)
+![Image](./2tech%20and%20lib%20output.png)
 
 ## Example 3
 We can use ```find``` with a path. For example, ```find technical/911report```. Then the command would list all the files in hte 911report directory.
