@@ -1,26 +1,83 @@
 # Lab Report Week 5
 
 In this week 5 lab report, I will give 9 command-line examples and explain how I used them.
-In example 1 to 3, I will introduce how to use ```find``` in the simplest way: to use it directly and list all the files in the directory.
+In example 1 to 3, I will introduce how to use ```find -path```, to find all the paths that contains a given string.
 In example 4 to 6, I will explain how to use ```find some-files -name``` to look for a file in the directory given a specific name.
 In example 7 to 9, I will explain how to use ```find``` with ```xargs wc``` to find and count the lines/words/characters of the files in the given directory.
 
 
 ## Example 1
-In the first example, we used the command ```find``` in the simplest way. We wrote ```find technical/``` on the command line. The ```find``` command can list all the files in the directory. In this case, we are listing the files in the technical directory.
-![Image](./1findtech%20input.png)
-![Image](./1%20find%20technical.png)
+In the first example, we use the command ```find -path``` in the docsearch-main directory.
+
+```find technical -path "*.txt"```
+```
+technical/911report/chapter-3.txt
+technical/911report/chapter-2.txt
+technical/911report/chapter-1.txt
+technical/911report/chapter-5.txt
+technical/911report/chapter-6.txt
+technical/911report/chapter-7.txt
+technical/911report/chapter-9.txt
+technical/911report/chapter-8.txt
+technical/911report/preface.txt
+technical/911report/chapter-12.txt
+technical/911report/chapter-10.txt
+technical/911report/chapter-11.txt
+```
+This command will find all path in the technical directory that ends with ```.txt```
 
 
 ## Example 2
-We want to use ```find``` in two different directories together, so we wrote ```find technical/ lib/``` to list all the files in both of these directories.
-![Image](./2%20tech%20and%20lib.png)
-![Image](./2tech%20and%20lib%20output.png)
+In the second example, we are using ```find -path``` in the docsearch-main directory.
+
+```find technical -path "*911report*"```
+```
+technical/911report
+technical/911report/chapter-13.4.txt
+technical/911report/chapter-13.5.txt
+technical/911report/chapter-13.1.txt
+technical/911report/chapter-13.2.txt
+technical/911report/chapter-13.3.txt
+technical/911report/chapter-3.txt
+technical/911report/chapter-2.txt
+technical/911report/chapter-1.txt
+technical/911report/chapter-5.txt
+technical/911report/chapter-6.txt
+technical/911report/chapter-7.txt
+technical/911report/chapter-9.txt
+technical/911report/chapter-8.txt
+technical/911report/preface.txt
+technical/911report/chapter-12.txt
+technical/911report/chapter-10.txt
+technical/911report/chapter-11.txt
+```
+
+This will find all the paths that contains the string ```911report```
 
 ## Example 3
-We can use ```find``` with a path. For example, ```find technical/911report```. Then the command would list all the files in the ```911report``` directory.
-![Image](./3%20find%20technical%20911.png)
+In the third example, we want to use ```find -path``` in the technical directory.
 
+```find 911report -path "*chapter*"```
+```
+911report/chapter-13.4.txt
+911report/chapter-13.5.txt
+911report/chapter-13.1.txt
+911report/chapter-13.2.txt
+911report/chapter-13.3.txt
+911report/chapter-3.txt
+911report/chapter-2.txt
+911report/chapter-1.txt
+911report/chapter-5.txt
+911report/chapter-6.txt
+911report/chapter-7.txt
+911report/chapter-9.txt
+911report/chapter-8.txt
+911report/chapter-12.txt
+911report/chapter-10.txt
+911report/chapter-11.txt
+```
+
+This will find all the paths that contain the string ```chapter```.
 
 ## Example 4
 Using ```find``` with ```-name```, we can find certain files that meets our criteria. For example, we want to list the files with ```.txt``` in the directory. We write ```find technical -name "*.txt"``` so the sommand will list all files in ```technical``` directory that are ```.txt``` files.
