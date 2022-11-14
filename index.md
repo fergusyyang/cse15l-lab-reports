@@ -20,7 +20,7 @@ Enter ```cebase``` to change the parameter ```start``` to ```base```.
 
 ![Image](./lab43.png)
 
-Then we hit <esc> to exit the input mode.
+Then we hit ```<esc>``` to exit the input mode.
 
 We repeat the above process by entering ```n.n.``` and change the other two ```start``` to ```base```.
   
