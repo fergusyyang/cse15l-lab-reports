@@ -32,8 +32,16 @@ Then we use ```:wq<enter>``` to save and exit.
 
 
 ## Part 2
+  
+The first method took 2 minutes and 25 seconds, while the second method only took 1 minute and 40 seconds.
+  
+The first method was taking more time because I had to scp the file to the remote server and then run it there.
+  
+The second method does not need to do the scp process and can just edit and run the file on the remote server directly.
+  
+If I had to work on a progrma that I was running remotely, I will prefer to use the second method because it is much faster.
 
-
+If the task is easier to be done locally, I might have to choose the first method. For example, it is easy to debug, test, and switch files locally.
 
 
 
